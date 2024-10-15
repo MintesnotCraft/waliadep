@@ -34,7 +34,7 @@
 					<cloudHubDeployment>
                         <uri>https://anypoint.mulesoft.com</uri>
 
-                        <muleVersion>4.8.0:8e</muleVersion>
+                        <muleVersion>4.6-java17</muleVersion>
 
                         <username>mintesnotwalia</username>
 
