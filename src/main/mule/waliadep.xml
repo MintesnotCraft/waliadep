@@ -21,6 +21,19 @@ output application/json
 			</ee:message>
 		</ee:transform>
 	</flow>
+	<flow name="waliadepFlow3" doc:id="07d8d6ec-d985-47ba-bc40-94dad586ff7d" >
+		<http:listener doc:name="Listener" doc:id="60c4dd2a-913c-4b53-af15-9e7efb639397" config-ref="HTTP_Listener_config" path="/another"/>
+		<ee:transform doc:name="Transform Message" doc:id="55d825b4-e648-451e-998b-ab842fbfbb83" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"msg": "Another Message"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
 	<flow name="waliadepFlow1" doc:id="a0c77084-1e96-4fa1-99e9-09b29f069b55" >
 		<http:listener doc:name="Listener" doc:id="27343886-9f19-48d3-8fa3-4e46ac386346" config-ref="HTTP_Listener_config" path="/craft"/>
 		<ee:transform doc:name="Transform Message" doc:id="284898c5-8a58-4b62-b4eb-21addc88e313" >
