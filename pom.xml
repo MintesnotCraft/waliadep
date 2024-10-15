@@ -34,21 +34,21 @@
 					<cloudHubDeployment>
                         <uri>https://anypoint.mulesoft.com</uri>
 
-                        <muleVersion>4.6-java17</muleVersion>
+                        <muleVersion>${mule.version}</muleVersion>
 
-                        <username>mintesnotwalia</username>
+                        <username>${anypoint.username}</username>
 
-                        <password>Gingerbread9@gingerbread</password>
+                        <password>${anypoint.password}</password>
 
-                        <environment>Sandbox</environment>
+                        <environment>${env}</environment>
 
-                        <applicationName>waliaanother</applicationName>
+                        <applicationName>${appname}</applicationName>
 
-                        <businessGroup>MuleSoft</businessGroup>
+                        <businessGroup>${business}</businessGroup>
 
-                        <workerType>Micro</workerType>
+                        <workerType>${vCore}</workerType>
 
-                        <workers>1</workers>
+                        <workers>${workers}</workers>
 
                         <objectStoreV2>true</objectStoreV2>
 </cloudHubDeployment>
